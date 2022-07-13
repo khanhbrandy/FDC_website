@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />  
+   <title>Data Science in Economics and Business Program | FTU x Datapot</title>
+   <link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/header_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/index_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/navicon_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/slide_styles.css">
+   <script src="js/slide.js"  defer></script>  
+   <script src="js/form_validation.js"  defer></script> 
+</head>
+
+<body>
+   <header>
+      <nav class="logo">
+         <img src="images/logo.png" alt="Data science in Economics and Business" />
+      </nav>    
+      <nav class="toplinks">
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">LOGIN</a></li>
+            <div id="login" class="modal">
+               <form name="login_form" class="modal-content animate" method="post" onsubmit="return validateLoginForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="uname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="uname" required>
+             
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                     
+                   <button type="submit">Login</button>
+                   <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                   <span class="psw">Don't have an account yet? <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Sign Up</a></span>
+                 </div>
+               </form>
+             </div>
+             <li><a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">REGISTER</a></li>
+             <div id="register" class="modal">
+               <form name="register_form" class="modal-content animate" method="post" onsubmit="return validateRegisterForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/register.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="fullname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="fullname" required>
+
+                   <label for="email"><b>Email</b></label>
+                   <input type="text" placeholder="Enter email address" name="email" required>
+
+                   <label for="gender"><b>Gender</b></label>
+                     <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                     </select>
+
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                   <label for="pwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+
+                   <button type="submit">Register</button>
+
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                   
+                 </div>
+               </form>
+             </div>
+             <li><a href="contact.html">CONTACT US</a></li>
+         </ul>
+      </nav>
+      <nav class="tabs">
+         <a id="navicon" href="#"><img src="images/navicon.png" alt="" /></a>
+         <ul class="mainmenu">
+            <li><a href="index.html" id="currentPage">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="syllabus.html">SYLLABUS</a></li>
+            <li><a href="falcuty.html">FALCUTY</a></li>
+            <li><a href="fee.html">FEES & FUNDING</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            
+         </ul>
+      </nav>
+   </header>
+   
+   <section id="slide">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+         <img src="images/img_slide_1.jpg" style="width:100%">
+         
+         </div>
+      
+         <div class="mySlides fade">
+         <img src="images/img_slide_2.jpg" style="width:100%">
+         
+         </div>
+      
+         <div class="mySlides fade">
+         <img src="images/img_slide_3.jpg" style="width:100%">
+         
+         </div>
+         <!-- Next and previous buttons -->
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+   </section>
+   <article>
+      <section id="center">
+         <p>As this course is designed for graduates of <em>non-computing subjects</em>, 
+            previous knowledge or experience in computer science or mathematical 
+            modeling are not required. 
+         </p>
+         <p>Students will start it by learning some foundational 
+            knowledge and essential skills in data science intensively and then move on to 
+            learn some advanced or specialised knowledge, such as <em>business intelligence, 
+               data mining and machine learning</em>.
+         </p>
+      </section>
+
+      <section>
+         <p>In addition, students will be trained to develop their generic and transferable skills 
+            in the areas of <em>communication, critical thinking and reasoning, problem solving, 
+               technical writing, independent and team working and project management</em>.  
+         </p>
+         <p>Upon completion of the program, graduates will be able to find employment in industry, 
+            public sector organisations and in research, working in diverse roles ranging from 
+            <em>data consultant, business intelligence developer, data analyst, data scientist to 
+               academic or commercial researcher</em>. 
+         </p>
+         
+      </section>
+      
+      <nav class="vertical">
+         <h1>News and Events</h1>
+         <ul>
+            <li><a href="https://www.facebook.com/ftudatainbusiness/posts/pfbid02U8FyaHLxeXYFRNXaBr42qiLf8c5BbQRisbZg64PjA93GFwmR5rQCvipttPgMpwXZl">FDC02: Ask me anything </a></li>
+            <li><a href="https://www.facebook.com/ftudatainbusiness/posts/pfbid0LkV2bewufA2orau6KopAvpV6zzCwR4u7ZisS5nunoyo2W7y61xgcnCfxSo2pVY5ul">FDC 02: Information Sessions</a></li>
+            <li><a href="https://www.facebook.com/events/5063228467132964/">Webinar: Data Analysis in a nutshell</a></li>
+            <li><a href="https://www.facebook.com/ftudatainbusiness/posts/pfbid0xBVQqFo4ncaC9F17Z9xgwdVwRxq94PaNJQupdKb6hs6wpt1yTJ6TK4wEpb9JPpxDl">FDC02: Mid-term recap</a></li>
+            <li><a href="https://www.facebook.com/ftudatainbusiness/posts/pfbid0Nxb44cteUMVJsiMBr8zC4H3cA7G7NaHWJov3uMETrRPSnbsVg1ZoJP8q1pHEkkcxl">FDC01: Graduation Ceremony</a></li>
+         </ul>
+      </nav>         
+   </article>
+   <footer>
+      Datapot &copy; 2022 
+      <span> 
+         <a href="https://datapot.vn/ve-chung-toi/">About Datapot</a> 
+         <a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a> 
+         <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Register</a> 
+      </span>
+   </footer>
+</body>
+</html>

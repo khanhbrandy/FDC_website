@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />  
+   <title>Data Science in Economics and Business Program | FTU x Datapot</title>
+   <link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/header_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/apply_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/navicon_styles.css" />
+   <script src="js/form_validation.js"  defer></script> 
+</head>
+
+<body>
+   <header>
+      <nav class="logo">
+         <img src="images/logo.png" alt="Data science in Economics and Business" />
+      </nav>    
+      <nav class="toplinks">
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">LOGIN</a></li>
+            <div id="login" class="modal">
+               <form name="login_form" class="modal-content animate" method="post" onsubmit="return validateLoginForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="uname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="uname" required>
+             
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                     
+                   <button type="submit">Login</button>
+                   <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                   <span class="psw">Don't have an account yet? <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Sign Up</a></span>
+                 </div>
+               </form>
+             </div>
+             <li><a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">REGISTER</a></li>
+             <div id="register" class="modal">
+               <form name="register_form" class="modal-content animate" method="post" onsubmit="return validateRegisterForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/register.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="fullname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="fullname" required>
+
+                   <label for="email"><b>Email</b></label>
+                   <input type="text" placeholder="Enter email address" name="email" required>
+
+                   <label for="gender"><b>Gender</b></label>
+                     <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                     </select>
+
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                   <label for="pwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+
+                   <button type="submit">Register</button>
+
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                   
+                 </div>
+               </form>
+             </div>
+             <li><a href="contact.html">CONTACT US</a></li>
+         </ul>
+      </nav>
+      <nav class="tabs">
+         <a id="navicon" href="#"><img src="images/navicon.png" alt="" /></a>
+         <ul class="mainmenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="syllabus.html">SYLLABUS</a></li>
+            <li><a href="falcuty.html">FALCUTY</a></li>
+            <li><a href="fee.html">FEES & FUNDING</a></li>
+            <li><a href="apply.html" id="currentPage">APPLY</a></li>
+            
+         </ul>
+      </nav>
+   </header>
+   <div class="timeline">
+      <div class="container_map left">
+        <div class="content">
+          <h2>New intake updates</h2>
+          <p>Lastest information on application process, deadlines and entrance test will be updated on this official website 
+            and <strong><a href="https://www.facebook.com/ftudatainbusiness"> Facebook Page </a></strong>of the program.</p>
+        </div>
+      </div>
+      <div class="container_map right">
+        <div class="content">
+          <h2>Open for application</h2>
+          <p>The online application begins </p>
+        </div>
+      </div>
+      <div class="container_map left">
+        <div class="content">
+          <h2>Admission requirements check</h2>
+          <p>Identify applicants's academic background and review the admission requirements. In addition to meeting general university admission requirements, 
+            potential candidates may need to present specific subject prerequisites, or submit a personal profile or statement of interest.</p>
+        </div>
+      </div>
+      <div class="container_map right">
+        <div class="content">
+          <h2>Online admissions test </h2>
+          <p>The admission exam aims to test the depth of mathematical, statistical and probabilistic understanding of the candidates 
+            as well as their problem solving skills.</p>
+        </div>
+      </div>
+      <div class="container_map left">
+        <div class="content">
+          <h2>Paying tuition</h2>
+          <p>There are many methods to pay your tuition, each with its own set of instructions. To find tuition and fee amounts, shortlisted students should follow
+            the payment guidance in the offer letter.</p>
+        </div>
+      </div>
+      <div class="container_map right">
+        <div class="content">
+          <h2>Program starts</h2>
+          <p>Students attending the program will be notified by a welcome email with details of timetable, classroom and required documents.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Datapot &copy; 2022 
+      <span> 
+         <a href="https://datapot.vn/ve-chung-toi/">About Datapot</a> 
+         <a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a> 
+         <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Register</a> 
+      </span>
+   </footer>
+</body>
+</html>

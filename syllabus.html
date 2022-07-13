@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />  
+   <title>Data Science in Economics and Business Program | FTU x Datapot</title>
+   <link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/header_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/syllabus_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/navicon_styles.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="js/form_validation.js"  defer></script> 
+</head>
+
+<body>
+   <header>
+      <nav class="logo">
+         <img src="images/logo.png" alt="Data science in Economics and Business" />
+      </nav>    
+      <nav class="toplinks">
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">LOGIN</a></li>
+            <div id="login" class="modal">
+               <form name="login_form" class="modal-content animate" method="post" onsubmit="return validateLoginForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="uname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="uname" required>
+             
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                     
+                   <button type="submit">Login</button>
+                   <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                   <span class="psw">Don't have an account yet? <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Sign Up</a></span>
+                 </div>
+               </form>
+             </div>
+             <li><a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">REGISTER</a></li>
+             <div id="register" class="modal">
+               <form name="register_form" class="modal-content animate" method="post" onsubmit="return validateRegisterForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/register.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="fullname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="fullname" required>
+
+                   <label for="email"><b>Email</b></label>
+                   <input type="text" placeholder="Enter email address" name="email" required>
+
+                   <label for="gender"><b>Gender</b></label>
+                     <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                     </select>
+
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                   <label for="pwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+
+                   <button type="submit">Register</button>
+
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                   
+                 </div>
+               </form>
+             </div>
+             <li><a href="contact.html">CONTACT US</a></li>
+         </ul>
+      </nav>
+      <nav class="tabs">
+         <a id="navicon" href="#"><img src="images/navicon.png" alt="" /></a>
+         <ul class="mainmenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="syllabus.html" id="currentPage">SYLLABUS</a></li>
+            <li><a href="falcuty.html">FALCUTY</a></li>
+            <li><a href="fee.html">FEES & FUNDING</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            
+         </ul>
+      </nav>
+   </header>
+   <section id="main">
+      <article id="overview">
+         <img src="images/syllabus.png" alt="Data science in Economics and Business" />
+         <h1>AFTER THE PROGRAM</h1>
+         <p>You will graduate ready for a career in data analysis or data science – an area of rapid growth at the moment.</p>
+         <h1>CAREER DESTINATIONS</h1>
+         <p>Examples of careers that you could enter include: </p>
+         <ul>
+            <li class="jobs">Data Scientist</li>
+            <li class="jobs">Data Analyst</li>
+            <li class="jobs">Business Intelligence Analyst</li>
+         </ul>
+         <h1>PREREQUISITES</h1>
+         <p>Applicants are required to complete the following modules (or equivalencies) before applying for the Data Science in Economics and Business program: </p>
+         <ul>
+            <li class="equivalent">Advanced Mathematics <em><a href="http://bit.ly/TCC_syllabus">(details)</a></em></li>
+            <li class="equivalent">Statistics and Probability <em><a href="http://bit.ly/XSTK_syllabus">(details)</a></em></li>
+         </ul>
+         <p>Courses listed <em><a href="http://bit.ly/quydoiHPTD">HERE</a></em> are equivalent to the two courses above and can be taken as prerequisites. </p>
+         
+      </article>
+      
+      <section id="modules">
+         <article>
+            <h1>Database Management System</h1>
+            <p>This course introduces students to important aspects of databases, database manipulation and database management systems. 
+               The course is based on the relational model. Learners will explore the tools and methods for database design and manipulation 
+               as well as the programming of database applications. Part of the practical experience they will gain will be acquired 
+               using a modern relational database management system. Students will also gain programming experience using SQL, and using 
+               a high level programming language to write applications that access the database.</p>
+         </article>
+         <article>
+            <h1>Programming for Data Analysis and Scientific Computing</h1>
+            <p>This course discusses how Python can be utilized in scientific computing and how this programming language is used: 
+               related scientific libraries, reproducibility, and the broader ecosystem of science in Python. Students will learn 
+               the foundations of programming in Python for data science, and how to conduct data analysis. The courses will also 
+               introduces the main packages for numerical computing (NumPy, SciPy), Pandas for processing tabular data, Matplotlib 
+               for data visualization as well as Sklearn for machine learning. </p>
+         </article>
+         <article>
+            <h1>Advanced Analytics in Economics and Business</h1>
+            <p>During this course, students will be equipped with data processing, computing and mining capabilities in order to 
+               generate actionable insights and forecasts, helping organizations fully utilize their data and determine the best course 
+               of action for every real-world problem within a range of business contexts, thereby making decisions in a more timely 
+               and efficient manner. The subject content is closely tied to the practice of Data Analytics and Business Intelligence.</p>
+         </article>
+         
+      </section>
+      
+   </section>
+   
+   <footer>
+      Datapot &copy; 2022 
+      <span> 
+         <a href="https://datapot.vn/ve-chung-toi/">About Datapot</a> 
+         <a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a> 
+         <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Register</a> 
+      </span>
+   </footer>
+</body>
+</html>

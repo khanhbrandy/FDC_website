@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgba(230, 235, 237, 0.25);
+   font-size: 12px;
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+   background-color: rgb(231, 231, 231);
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 200px;
+   max-width: 1100px;
+   width: 100%;
+   box-shadow: 0px 10px 50px rgb(51,51,51);
+}
+/* Introduction section */
+section#intro article h1 {
+   font-size: 1.7em;
+   margin: 40px auto 20px 20px;
+   text-align: center;
+}
+
+section#intro article p {
+   font-size: 1.2em;
+   line-height: 25px;
+   margin: 10px 5% 10px 5%;
+   text-align: left;
+}
+
+/* Style the button and the collapsible content */
+.collapsible {
+   background-color: #063970;
+   color: white;
+   cursor: pointer;
+   padding: 18px;
+   width: 90%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   margin: 10px 5% 0 5%;
+ }
+ .collapsible:after {
+   content: '\02795'; 
+   font-size: 13px;
+   color: white;
+   float: right;
+   margin-left: 5px;
+ }
+ 
+ .active, .collapsible:hover {
+   background-color:  rgb(37, 150, 190);
+ }
+
+ .active:after {
+   content: "\2796";
+   color: white;
+ }
+
+ .content {
+   padding: 0 18px;
+   display: none;
+   overflow: hidden;
+   background-color:rgb(171,219,227);
+   margin: 0px 5% 10px 5%;
+   font-size: 1.2em;
+ }
+ 
+ div.content > p {
+   margin: 20px 10px 20px 0;
+ }
+
+/* Tuition fee table */
+
+.columns:hover {
+    margin-top: -1px;
+}
+
+* {
+   box-sizing: border-box;
+ }
+
+ 
+ .price {
+   list-style-type: none;
+   border: 1px solid rgba(0,0,0,0.1);
+   margin: 0;
+   padding: 0;
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+ }
+ 
+ .price:hover {
+   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+ }
+ 
+ .price .header {
+   background-color: #111;
+   color: white;
+   font-size: 20px;
+ }
+ 
+ .price li {
+  background-color: #ddecff;
+   border-bottom: 1px solid #eee;
+   padding: 20px;
+   text-align: center;
+   font-size: 1.2em;
+ }
+ 
+ .price .grey {
+   background-color: rgb(255, 255, 255);
+   font-size: 20px;
+ }
+ 
+ .button_ftu {
+   background-color: #b30000;
+   border: none;
+   color: white;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 13px;
+   border-radius: 16px;
+ }
+
+ .button_ftu:hover {
+   background-color: #cf6767;
+ }
+
+ .button {
+   background-color: #063970;
+   border: none;
+   color: white;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 13px;
+   border-radius: 16px;
+ }
+
+ .button:hover {
+   background-color: #0b7dda;
+ }
+
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+   .columns {
+      width: 90%;
+      margin: 3% auto 3% 5%;
+    }
+
+}
+
+/* ============================================
+  Tablet and Desktop Styles: 481px and greater 
+  ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+ 
+   .columns {
+      float: left;
+      width: 28%;
+      margin: 3% 0 3% 4%;
+      padding: 10px;
+    }
+}
+

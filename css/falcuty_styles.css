@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgba(230, 235, 237, 0.25);
+   font-size: 12px;
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+   background-color: rgb(231, 231, 231);
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 200px;
+   max-width: 1100px;
+   width: 100%;
+   box-shadow: 0px 10px 50px rgb(51,51,51);
+}
+
+ /* Meet our team section */
+section#meet article h1 {
+   font-size: 1.7em;
+   margin: 40px auto 20px 20px;
+   text-align: center;
+}
+
+section#meet article p {
+   font-size: 1.2em;
+   line-height: 25px;
+   margin: 10px 40px 10px 40px;
+   text-align: left;
+}
+
+ .card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin: 10px 30px 10px 30px;
+   background-color: #ffffff;
+ }
+
+ .container h2 {
+   font-size: 1.3em;
+   margin: 8px 5px 8px auto;
+   text-align: left;
+}
+
+ .container p {
+   margin: 10px auto 10px auto;
+}
+
+ .container {
+   padding: 0 16px;
+   
+ }
+ 
+ .container::after, .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 
+ .title {
+   color: grey;
+   margin: 5px 5px 10px auto;
+ }
+ 
+ .btn {
+   background-color: #063970;
+   color: white;
+   padding: 8px;
+   font-size: 16px;
+   border: none;
+   outline: none;
+   display: inline-block;
+   text-align: center;
+   cursor: pointer;
+   width: 91%;
+   margin: auto auto 5% auto;
+ }
+ 
+ .dropdown {
+   position: absolute;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: #ddd}
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
+ .btn:hover, .dropdown:hover .btn {
+   background-color: #0b7dda;
+ }
+ 
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+@media only screen and (max-width: 480px) {
+   .column {
+      float: left;
+      width: 100%;
+      margin: 3% auto 3% auto;
+      padding: 0 10px;
+      display: block;
+   }
+}
+
+/* ============================================
+  Tablet and Desktop Styles: 481px and greater 
+  ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+   .column {
+      float: left;
+      width: 33.3%;
+      margin: 3% auto 3% auto;
+      padding: 0 10px;
+   }
+}

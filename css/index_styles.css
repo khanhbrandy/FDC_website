@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgba(230, 235, 237, 0.25);
+   font-size: 12px;
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+   background-color: rgb(231, 231, 231);
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 200px;
+   max-width: 1100px;
+   width: 100%;
+   box-shadow: 0px 10px 50px rgb(51,51,51);
+}
+
+/* Slide section Styles */
+
+section.slide {
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   margin-bottom: 10px;
+   padding-bottom: 20px;
+}
+
+/* Article Styles */
+
+article { 
+   background: white;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap; 
+   margin-top: 10px;
+}
+
+article section, article nav.vertical {
+   -webkit-flex: 1 1 300px;
+   flex: 1 1 300px;
+}
+
+section p {
+   margin: 20px;
+}
+
+/*Section 1 styles */
+
+article section:nth-of-type(1) {
+   background-color: #ffe6e6;
+}
+
+/* Section 2 styles */
+
+article section:nth-of-type(2) {
+   background-color: #ffcccc;
+}
+
+/* Vertical navigation list styles */
+
+nav.vertical {
+   background-color: #ffb3b3;
+}
+
+nav.vertical h1 {
+   color: white;
+   text-shadow: #b30000;
+   font-size: 1.35em;
+   letter-spacing: 3px;
+   text-align: center;
+   padding: 10px;
+   margin: 0px 0px 15px 0px;
+   background-color: #b30000;
+}
+
+
+nav.vertical ul li {
+   text-align: center;
+}
+
+
+nav.vertical ul li a {
+   display: block;
+   padding-left: 30px;
+   height: 32px;
+   line-height: 32px;
+   width: auto;
+   color: rgb(51, 51, 51);
+}
+
+nav.vertical ul li a:hover {
+   background-color: #ff6666;
+}
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />  
+   <title>Data Science in Economics and Business Program | FTU x Datapot</title>
+   <link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/header_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/about_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/navicon_styles.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="js/form_validation.js"  defer></script> 
+</head>
+
+<body>
+   <header>
+      <nav class="logo">
+         <img src="images/logo.png" alt="Data science in Economics and Business" />
+      </nav>    
+      <nav class="toplinks">
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">LOGIN</a></li>
+            <div id="login" class="modal">
+               <form name="login_form" class="modal-content animate" method="post" onsubmit="return validateLoginForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="uname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="uname" required>
+             
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                     
+                   <button type="submit">Login</button>
+                   <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                   <span class="psw">Don't have an account yet? <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Sign Up</a></span>
+                 </div>
+               </form>
+             </div>
+             <li><a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">REGISTER</a></li>
+             <div id="register" class="modal">
+               <form name="register_form" class="modal-content animate" method="post" onsubmit="return validateRegisterForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/register.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="fullname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="fullname" required>
+
+                   <label for="email"><b>Email</b></label>
+                   <input type="text" placeholder="Enter email address" name="email" required>
+
+                   <label for="gender"><b>Gender</b></label>
+                     <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                     </select>
+
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                   <label for="pwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+
+                   <button type="submit">Register</button>
+
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                   
+                 </div>
+               </form>
+             </div>
+             <li><a href="contact.html">CONTACT US</a></li>
+         </ul>
+      </nav>
+      <nav class="tabs">
+         <a id="navicon" href="#"><img src="images/navicon.png" alt="" /></a>
+         <ul class="mainmenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html" id="currentPage">ABOUT</a></li>
+            <li><a href="syllabus.html">SYLLABUS</a></li>
+            <li><a href="falcuty.html">FALCUTY</a></li>
+            <li><a href="fee.html">FEES & FUNDING</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            
+         </ul>
+      </nav>
+   </header>
+   <section id="video">
+      <article>
+         <header>
+            <h1>DATA SCIENCE IN ECONOMICS AND BUSINESS | GRADUATION DAY 2022</h1>
+         </header>
+         <iframe src="https://www.youtube.com/embed/mUHgop_wMMg" frameborder="0" allowfullscreen></iframe>
+         <p>Find out more at <a href="https://www.facebook.com/ftudatainbusiness">our Facebook Page</a></p>
+      </article>
+      <aside>
+         
+         <div class="feedback_container">
+            <h2>WE VALUE YOUR FEEDBACK </h2>
+            <form name="yourFeedback" action="#" onsubmit="return validateFeedbackForm()" method="post">
+          
+              <label for="fname">Full name</label>
+              <input type="text" id="fname" name="fullname" placeholder="Your full name" required>
+          
+              <label for="email">Your email</label>
+              <input type="text" id="lname" name="email" placeholder="Your email address" required>
+          
+              <label for="phone">Your phone number</label>
+              <input type="text" id="lname" name="phone" placeholder="Your phone number" required>
+          
+              <label for="subject">Your comment</label>
+              <textarea id="subject" name="comment" placeholder="Write something..." style="height:50px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+      </aside>
+   </section>
+   <section id="feedback">
+      <blockquote>
+         <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         <p>The program has successfully laid a solid foundation in the data science for me and other students.</p>
+      </blockquote>
+      <cite> <img src="images/reviewer1.png" alt="" /><br />
+      &mdash; Huyen Tran, FDC01 </cite>
+      <blockquote>
+         <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         <p>Personally, I suppose that we, as students, should spend more time on learning and doing assignments,
+             to develop an independent study habit which prepares us to work alone as data analysts.</p>
+      </blockquote>
+      <cite> <img src="images/reviewer2.png" alt="" /><br />
+      &mdash; Hiep Nguyen, FDC02 </cite>
+      <blockquote>
+         <p><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+         <p>At first, I thought that data science looks so boring as it only involves mathematics and programming. 
+            However, the well-designed program structure and enthusiastic lectures have changed my whole perspective on this field.</p>
+      </blockquote>
+      <cite> <img src="images/reviewer3.png" alt="" /><br />
+      &mdash; Anh Vu, FDC01 </cite> </section>
+
+      
+
+
+   
+      <footer>
+         Datapot &copy; 2022 
+         <span> 
+            <a href="https://datapot.vn/ve-chung-toi/">About Datapot</a> 
+            <a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a> 
+            <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Register</a> 
+         </span>
+      </footer>
+</body>
+</html>

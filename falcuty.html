@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />  
+   <title>Data Science in Economics and Business Program | FTU x Datapot</title>
+   <link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/header_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/falcuty_styles.css" />
+   <link rel="stylesheet" type="text/css" href="css/navicon_styles.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="js/form_validation.js"  defer></script> 
+</head>
+
+<body>
+   <header>
+      <nav class="logo">
+         <img src="images/logo.png" alt="Data science in Economics and Business" />
+      </nav>    
+      <nav class="toplinks">
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">LOGIN</a></li>
+            <div id="login" class="modal">
+               <form name="login_form" class="modal-content animate" method="post" onsubmit="return validateLoginForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/img_avatar.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="uname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="uname" required>
+             
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                     
+                   <button type="submit">Login</button>
+                   <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                   <span class="psw">Don't have an account yet? <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Sign Up</a></span>
+                 </div>
+               </form>
+             </div>
+             <li><a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">REGISTER</a></li>
+             <div id="register" class="modal">
+               <form name="register_form" class="modal-content animate" method="post" onsubmit="return validateRegisterForm();">
+                 <div class="imgcontainer">
+                   <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images/register.png" alt="Avatar" class="avatar">
+                 </div>
+                 <div class="container">
+                   <label for="fullname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="fullname" required>
+
+                   <label for="email"><b>Email</b></label>
+                   <input type="text" placeholder="Enter email address" name="email" required>
+
+                   <label for="gender"><b>Gender</b></label>
+                     <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                     </select>
+
+                   <label for="pwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="pwd" required>
+
+                   <label for="pwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+
+                   <button type="submit">Register</button>
+
+                 </div>
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                   
+                 </div>
+               </form>
+             </div>
+             <li><a href="contact.html">CONTACT US</a></li>
+         </ul>
+      </nav>
+      <nav class="tabs">
+         <a id="navicon" href="#"><img src="images/navicon.png" alt="" /></a>
+         <ul class="mainmenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="syllabus.html">SYLLABUS</a></li>
+            <li><a href="falcuty.html" id="currentPage">FALCUTY</a></li>
+            <li><a href="fee.html">FEES & FUNDING</a></li>
+            <li><a href="apply.html">APPLY</a></li>
+            
+         </ul>
+      </nav>
+   </header>
+   <section id="meet">
+   <article>
+      <h1>MEET OUR FALCUTY</h1>
+      <p>Imagine being mentored by the great minds you most respect. Imagine learning from most renowned industry experts.
+         Imagine participating in intensive seminars led by faculty on the forefront of research and scholarship.</p>
+      <p>In Data Science in Economics and Business program, you will be surrounded by lecturers and mentors who are leading their fields. 
+            They bring real-world experience on the cutting edge of thought and creativity to the classroom, fostering a dynamic and demanding 
+            academic environment. Our lecturers encourage students to think broadly, analytically, and critically.</p>
+      <p>Our faculty create active partnerships with students. They will consult with you about your career path, invite you to join their 
+         own projects, or help you design your own. </p>
+      <p>Check out the stories below to learn about them.</p>
+   </article>
+   </section>
+   <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="images/to-manh-hoang.jpeg" alt="To Manh Hoang" style="width:100%">
+          <div class="container">
+            <h2>To Manh Hoang</h2>
+            <p class="title">Founder, CEO Datapot Analytics </p>
+            <p>More than 7 years of experience in Management of Information System, Business Intelligence, Data Management and Analytics.
+               MIS Project Manager - MB Securities</p>
+            <button class="btn">Contact</button>
+               <div class="dropdown">
+                  <button class="btn" style="border-left:1px solid white">
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="mailto:hoang@datapot.vn">Email</a>
+                  <a href="https://hoangtomanh.github.io/">Website</a>
+                  </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/mai-xuan-trang.jpeg" alt="Mai Xuan Trang" style="width:100%">
+          <div class="container">
+            <h2>Mai Xuan Trang, PhD</h2>
+            <p class="title">University Lecturer, Data Scientist</p>
+            <p>PhD in Informatics at 
+               Kyoto University, Japan. Expert in Cloud Computing, Policy-Aware Service Composition, Data Science and Machine Learning
+               Lecturer at Phenikaa University</p>
+               <button class="btn">Contact</button>
+               <div class="dropdown">
+                  <button class="btn" style="border-left:1px solid white">
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="mailto:trangmx@datapot.vn">Email</a>
+                  <a href="https://scholar.google.com/citations?user=0phzmw8AAAAJ&hl=en">Website</a>
+                  </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/trinh-ngoc-khanh.jpeg" alt="Trinh Ngoc Khanh" style="width:100%">
+          <div class="container">
+            <h2>Trinh Ngoc Khanh, MSc</h2>
+            <p class="title">Senior Data Scientist</p>
+            <p>Top 1 student in the Master program at University of East Anglia (UK). Awarded “Student Prize” for The best academic performance. 
+               More than 6 years of experience in Data Science.
+            </p>
+            <button class="btn">Contact</button>
+               <div class="dropdown">
+                  <button class="btn" style="border-left:1px solid white">
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="mailto:khanh@datapot.vn">Email</a>
+                  <a href="https://khanhbrandy.github.io/">Website</a>
+                  </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <footer>
+      Datapot &copy; 2022 
+      <span> 
+         <a href="https://datapot.vn/ve-chung-toi/">About Datapot</a> 
+         <a href="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a> 
+         <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;">Register</a> 
+      </span>
+   </footer>
+</body>
+</html>
