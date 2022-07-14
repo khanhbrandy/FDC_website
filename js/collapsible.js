@@ -1,3 +1,7 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

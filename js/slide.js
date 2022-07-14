@@ -1,3 +1,8 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
+
 let slideIndex = 0;
 showSlides();
 

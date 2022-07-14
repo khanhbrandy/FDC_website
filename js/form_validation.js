@@ -1,3 +1,8 @@
+/*
+   Created by: Ngoc Khanh Trinh
+   Created on: 13/06/2022
+*/
+
 // Get the modal
 var modal_login = document.getElementById('login');
 var modal_register = document.getElementById('register');
