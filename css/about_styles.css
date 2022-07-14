@@ -102,7 +102,7 @@ cite img {
 /* Feedback form styles */
 .feedback_container h2 {
   font-size: 1.3em;
-  margin: auto auto 30px auto;
+  margin: auto auto 20px auto;
   text-align: center;
 }
 
@@ -132,7 +132,7 @@ input[type=submit]:hover {
 }
 
 .feedback_container {
-  margin: 5% auto 5% 5%;
+  margin: 5% auto 3% 5%;
   border-radius: 5px;
   background-color: #ffffff;
   padding: 20px;
