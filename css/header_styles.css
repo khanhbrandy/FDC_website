@@ -199,7 +199,11 @@ input#rname:focus:valid,
 input#remail:focus:valid,
 input#rpwd:focus:valid,
 input#rpwd-repeat:focus:valid {
-	background: rgb(177, 207, 255) url("../images/valid.png") bottom right/contain no-repeat;
+	background-color: rgb(177, 207, 255); 
+   background-image: url("../images/valid.png"); 
+   background-position: bottom right; 
+   background-size: contain; 
+   background-repeat: no-repeat; 
 }
 
 input#rname:focus:invalid,
@@ -207,7 +211,11 @@ input#rname:focus:invalid,
 input#remail:focus:invalid,
 input#rpwd:focus:invalid,
 input#rpwd-repeat:focus:invalid {
-	background: rgb(255, 199, 187) url("../images/invalid.png") bottom right/contain no-repeat;
+   background-color: rgb(255, 199, 187); 
+   background-image: url("../images/invalid.png"); 
+   background-position: bottom right; 
+   background-size: contain; 
+   background-repeat: no-repeat; 
 }
  
 

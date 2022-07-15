@@ -172,14 +172,23 @@ input#fname:focus:valid,
 input#fgender:focus:valid,
 input#femail:focus:valid,
 input#fphone:focus:valid {
-	background: rgb(177, 207, 255) url("../images/valid.png") bottom right/contain no-repeat;
+  background-color: rgb(177, 207, 255); 
+  background-image: url("../images/valid.png"); 
+  background-position: bottom right; 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  
 }
 
 input#fname:focus:invalid,
 input#fgender:focus:invalid,
 input#femail:focus:invalid,
 input#fphone:focus:invalid {
-	background: rgb(255, 199, 187) url("../images/invalid.png") bottom right/contain no-repeat;
+  background-color: rgb(255, 199, 187); 
+  background-image: url("../images/invalid.png"); 
+  background-position: bottom right; 
+  background-size: contain; 
+  background-repeat: no-repeat; 
 }
 /* =========================
    Mobile Styles: 0 to 600px 
