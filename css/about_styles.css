@@ -93,7 +93,7 @@ cite img {
 }
 
 blockquote {
-	background-image: url(../images/speech.png);
+	background-image: url("../images/speech.png");
 	background-repeat: cover;
 	background-size: 100% 100%;
 	filter: drop-shadow(5px 5px 10px rgb(155, 154, 154));
@@ -172,14 +172,14 @@ input#fname:focus:valid,
 input#fgender:focus:valid,
 input#femail:focus:valid,
 input#fphone:focus:valid {
-	background: rgb(177, 207, 255) url(../images/valid.png) bottom right/contain no-repeat;
+	background: rgb(177, 207, 255) url("../images/valid.png") bottom right/contain no-repeat;
 }
 
 input#fname:focus:invalid,
 input#fgender:focus:invalid,
 input#femail:focus:invalid,
 input#fphone:focus:invalid {
-	background: rgb(255, 199, 187) url(../images/invalid.png) bottom right/contain no-repeat;
+	background: rgb(255, 199, 187) url("../images/invalid.png") bottom right/contain no-repeat;
 }
 /* =========================
    Mobile Styles: 0 to 600px 
