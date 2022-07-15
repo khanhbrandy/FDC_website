@@ -32,11 +32,11 @@
                    <img src="images/img_avatar.png" alt="Avatar" class="avatar">
                  </div>
                  <div class="container">
-                   <label for="uname"><b>Username</b></label>
-                   <input type="text" placeholder="Enter Username" name="uname" required>
+                   <label for="lname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="lname" autofocus required>
              
-                   <label for="pwd"><b>Password</b></label>
-                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                   <label for="lpwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="lpwd" required>
                      
                    <button type="submit">Login</button>
                    <label>
@@ -57,24 +57,24 @@
                    <img src="images/register.png" alt="Avatar" class="avatar">
                  </div>
                  <div class="container">
-                   <label for="fullname"><b>Full name</b></label>
-                   <input type="text" placeholder="Enter full name" name="fullname" required>
+                   <label for="rname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="rname" id="rname" autofocus required>
 
-                   <label for="email"><b>Email</b></label>
-                   <input type="text" placeholder="Enter email address" name="email" required>
+                   <label for="remail"><b>Email</b></label>
+                   <input type="email" placeholder="Enter email address" name="remail" id="remail" required>
 
-                   <label for="gender"><b>Gender</b></label>
-                     <select id="gender" name="gender">
+                   <label for="rgender"><b>Gender</b></label>
+                     <select id="rgender" name="rgender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                      </select>
 
-                   <label for="pwd"><b>Password</b></label>
-                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                   <label for="rpwd"><b>Password</b></label>
+                   <input type="password" placeholder="Contains at least 8 characters with at least 01 number, and 01 uppercase and lowercase letter" name="rpwd" id="rpwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 
-                   <label for="pwd-repeat"><b>Repeat Password</b></label>
-                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+                   <label for="rpwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="rpwd-repeat" id="rpwd-repeat" required>
 
                    <button type="submit">Register</button>
 
@@ -114,20 +114,43 @@
          <div class="feedback_container">
             <h2>WE VALUE YOUR FEEDBACK </h2>
             <form name="yourFeedback" action="#" onsubmit="return validateFeedbackForm()" method="post">
-          
-              <label for="fname">Full name</label>
-              <input type="text" id="fname" name="fullname" placeholder="Your full name" required>
-          
-              <label for="email">Your email</label>
-              <input type="text" id="lname" name="email" placeholder="Your email address" required>
-          
-              <label for="phone">Your phone number</label>
-              <input type="text" id="lname" name="phone" placeholder="Your phone number" required>
-          
+               <div class="formRow">
+                  <label for="fname">Full name (*)</label>
+                  <input type="text" name="fname" id="fname" placeholder="Your full name" autofocus required>
+               </div>
+               <div class="formRow">
+                  <label for="fgender">Gender</label>
+                  <select name="fgender" id="fgender">
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                     <option value="other">Other</option>
+                  </select>
+               </div>
+               <div class="formRow">
+                  <label for="femail">Email (*)</label>
+                  <input type="email" name="femail" id="femail" placeholder="Your email address" required>
+               </div>
+               <div class="formRow">
+                  <label for="fphone">Phone number</label>
+                  <input type="tel" name="fphone" id="fphone" placeholder="0123456789" pattern="(0[3|5|7|8|9])+([0-9]{8})\b" required>
+               </div>
+               <div class="formRow">
+                  <label for="course">Course taken</label>
+                  <select name="course" id="course" required>
+                     <option value="male">FDC01</option>
+                     <option value="female">FDC02</option>
+                     <option value="other">FDC03</option>
+                  </select>
+               </div>
+               <div class="formRow">
+                  <label for="rangeBox">Rate your overall experience<br>(0=bad; 5=excellent)</label>
+                  <input type="range" name="serviceRate" id="rangeBox" value="3" step="1" min="0" max="5">
+               </div>
               <label for="subject">Your comment</label>
               <textarea id="subject" name="comment" placeholder="Write something..." style="height:50px"></textarea>
           
               <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
           
             </form>
           </div>

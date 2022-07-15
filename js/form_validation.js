@@ -24,31 +24,15 @@ function validateLoginForm() {
 
 // Validate register form
 function validateRegisterForm() {
-    let email = document.forms["register_form"]["email"].value;
-    let pwd = document.forms["register_form"]["pwd"].value;
-    let _pwd = document.forms["register_form"]["pwd-repeat"].value;
-    if (!email.includes("@")) {
-        alert("Invalid email address. Try again!");
-        return false;
-    }
+    let pwd = document.forms["register_form"]["rpwd"].value;
+    let _pwd = document.forms["register_form"]["rpwd-repeat"].value;
     if (pwd != _pwd) {
         alert("Your password and confirmation password do not match. Try again!");
-        return false;
     }
     alert("Something is broken, please try again later!");
-    return false
 }
 
 // Validate feedback form
 function validateFeedbackForm() {
-    let email = document.forms["yourFeedback"]["email"].value;
-    let phone = document.forms["yourFeedback"]["phone"].value;
-    if (!email.includes("@")) {
-        alert("Invalid email address. Try again!");
-        return false;
-    }
-    if (isNaN(phone)) {
-        alert("Invalid phone number. Try again!");
-        return false;
-    }
+    alert("Something is broken, please try again later!");
 }

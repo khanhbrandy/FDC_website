@@ -83,7 +83,7 @@ footer span a:hover, footer span a:active {
 
 /* Login form styles */
 
-input[type=text], input[type=password], select, textarea {
+.container input[type=text], .container input[type=password], select#rgender, textarea, .container input[type=email] {
    width: 100%;
    padding: 12px 20px;
    margin: 8px 0;
@@ -189,6 +189,26 @@ input[type=text], input[type=password], select, textarea {
    from {transform: scale(0)} 
    to {transform: scale(1)}
  }
+
+ /* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(255, 199, 187);
+}
+input#rname:focus:valid,
+input#remail:focus:valid,
+input#rpwd:focus:valid,
+input#rpwd-repeat:focus:valid {
+	background: rgb(177, 207, 255) url(../images/valid.png) bottom right/contain no-repeat;
+}
+
+input#rname:focus:invalid,
+input#rname:focus:invalid,
+input#remail:focus:invalid,
+input#rpwd:focus:invalid,
+input#rpwd-repeat:focus:invalid {
+	background: rgb(255, 199, 187) url(../images/invalid.png) bottom right/contain no-repeat;
+}
  
 
  /* =========================

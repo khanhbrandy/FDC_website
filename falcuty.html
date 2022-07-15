@@ -32,11 +32,11 @@
                    <img src="images/img_avatar.png" alt="Avatar" class="avatar">
                  </div>
                  <div class="container">
-                   <label for="uname"><b>Username</b></label>
-                   <input type="text" placeholder="Enter Username" name="uname" required>
+                   <label for="lname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="lname" autofocus required>
              
-                   <label for="pwd"><b>Password</b></label>
-                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                   <label for="lpwd"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="lpwd" required>
                      
                    <button type="submit">Login</button>
                    <label>
@@ -57,24 +57,24 @@
                    <img src="images/register.png" alt="Avatar" class="avatar">
                  </div>
                  <div class="container">
-                   <label for="fullname"><b>Full name</b></label>
-                   <input type="text" placeholder="Enter full name" name="fullname" required>
+                   <label for="rname"><b>Full name</b></label>
+                   <input type="text" placeholder="Enter full name" name="rname" id="rname" autofocus required>
 
-                   <label for="email"><b>Email</b></label>
-                   <input type="text" placeholder="Enter email address" name="email" required>
+                   <label for="remail"><b>Email</b></label>
+                   <input type="email" placeholder="Enter email address" name="remail" id="remail" required>
 
-                   <label for="gender"><b>Gender</b></label>
-                     <select id="gender" name="gender">
+                   <label for="rgender"><b>Gender</b></label>
+                     <select id="rgender" name="rgender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                      </select>
 
-                   <label for="pwd"><b>Password</b></label>
-                   <input type="password" placeholder="Enter Password" name="pwd" required>
+                   <label for="rpwd"><b>Password</b></label>
+                   <input type="password" placeholder="Contains at least 8 characters with at least 01 number, and 01 uppercase and lowercase letter" name="rpwd" id="rpwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 
-                   <label for="pwd-repeat"><b>Repeat Password</b></label>
-                   <input type="password" placeholder="Repeat Password" name="pwd-repeat" id="psw-repeat" required>
+                   <label for="rpwd-repeat"><b>Repeat Password</b></label>
+                   <input type="password" placeholder="Repeat Password" name="rpwd-repeat" id="rpwd-repeat" required>
 
                    <button type="submit">Register</button>
 

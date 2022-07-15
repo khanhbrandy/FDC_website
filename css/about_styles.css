@@ -110,7 +110,22 @@ cite img {
   text-align: center;
 }
 
-input[type=text], select, textarea {
+form#yourFeedback {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.formRow {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 10px 0px;
+}
+
+div.formRow > * {
+	flex: 1 1 150px;
+}
+
+textarea {
   width: 100%; 
   padding: 12px; 
   border: 1px solid #ccc; 
@@ -121,7 +136,9 @@ input[type=text], select, textarea {
   resize: vertical 
 }
 
-input[type=submit] {
+
+
+input[type=submit], input[type=reset] {
   background-color:  #b30000;
   color: white;
   padding: 12px 20px;
@@ -131,7 +148,7 @@ input[type=submit] {
   
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, input[type=reset]:hover  {
   background-color: #ff6a6a;
 }
 
@@ -146,6 +163,24 @@ input[type=submit]:hover {
 	box-shadow: 10px 10px 20px rgb(155, 154, 154);
 }
 
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(255, 199, 187);
+}
+input#fname:focus:valid,
+input#fgender:focus:valid,
+input#femail:focus:valid,
+input#fphone:focus:valid {
+	background: rgb(177, 207, 255) url(../images/valid.png) bottom right/contain no-repeat;
+}
+
+input#fname:focus:invalid,
+input#fgender:focus:invalid,
+input#femail:focus:invalid,
+input#fphone:focus:invalid {
+	background: rgb(255, 199, 187) url(../images/invalid.png) bottom right/contain no-repeat;
+}
 /* =========================
    Mobile Styles: 0 to 600px 
    =========================
