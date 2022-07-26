@@ -114,6 +114,7 @@ section#intro article p {
    padding: 20px;
    text-align: center;
    font-size: 1.2em;
+   line-height: 1.2em;
  }
  
  .price .grey {
@@ -165,12 +166,24 @@ section#intro article p {
 
 }
 
-/* ============================================
-  Tablet and Desktop Styles: 481px and greater 
-  ============================================
+/* =========================
+   Tablet Styles: 481px and greater 
+   =========================
 */
 
 @media only screen and (min-width: 481px) {
+  .columns {
+    width: 90%;
+    margin: 3% auto 3% 5%;
+  }
+}
+
+/* ============================================
+  Desktop Styles: 769px and greater 
+  ============================================
+*/
+
+@media only screen and (min-width: 769px) {
  
    .columns {
       float: left;

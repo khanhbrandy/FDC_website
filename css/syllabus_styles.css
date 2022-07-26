@@ -75,11 +75,11 @@ section#modules article p {
 }
 
 /* =========================
-   Mobile Styles: 0 to 480px 
+   Mobile Styles: 0 to 768px 
    =========================
 */
 /* Horizonal Navigation Styles */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 
    article#overview img {
       background: radial-gradient(white 30%, rgb(151,151,151));
@@ -101,13 +101,15 @@ section#modules article p {
       margin-left: 10%;
    }
 }
+
+
 /* ============================================
-  Tablet and Desktop Styles: 481px and greater 
+  Tablet and Desktop Styles: 769px and greater 
   ============================================
 */
 
 /* Horizonal Navigation Styles */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
    article#overview img {
       background: radial-gradient(white 30%, rgb(151,151,151));
       float: left;
