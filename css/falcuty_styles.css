@@ -46,6 +46,7 @@ section#meet article p {
    font-size: 1.3em;
    margin: 8px 5px 8px auto;
    text-align: left;
+   line-height: 1.1em;
 }
 
  .container p {
@@ -126,12 +127,27 @@ section#meet article p {
    }
 }
 
-/* ============================================
-  Tablet and Desktop Styles: 481px and greater 
-  ============================================
+/* =========================
+   Tablet Styles: 481px and greater 
+   =========================
 */
 
 @media only screen and (min-width: 481px) {
+  .column {
+    float: left;
+    width: 100%;
+    margin: 3% auto 3% auto;
+    padding: 0 10px;
+    display: block;
+ }
+}
+
+/* ============================================
+  Desktop Styles: 769px and greater 
+  ============================================
+*/
+
+@media only screen and (min-width: 769px) {
    .column {
       float: left;
       width: 33.3%;
