@@ -4,9 +4,6 @@
 */
 @charset "utf-8";
 
-a#navicon {
-    display: none;
- }
 
 /* ===============================
    Mobile Devices: 0 to 480px 
@@ -27,4 +24,15 @@ a#navicon {
         display: block;
      }
    
+}
+
+/* =========================
+   Tablet and Desktop Styles: 481px and greater 
+   =========================
+*/
+
+@media only screen and (min-width: 481px) {
+   a#navicon {
+      display: none;
+   }
 }
